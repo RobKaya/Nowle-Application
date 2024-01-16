@@ -16,7 +16,7 @@
         "title": "Battery, Battery Module and Battery Pack",
         "description": "A battery includes a housing, a first terminal, a second terminal and a fuse structure provided between the first terminal and the housing.",
         "applicant": "Calb Co Ltd",
-        "inventors": ["Jane Smith", "John Doe"]
+        "inventors": "Jane Smith"
       }
     ],
     "headers": {
