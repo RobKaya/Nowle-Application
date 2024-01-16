@@ -1,6 +1,6 @@
-package es.wacoco.nowle.Controller;
+package es.wacoco.nowle.Camel.Controller;
 
-import es.wacoco.nowle.Service.CamelService;
+import es.wacoco.nowle.Camel.Service.CamelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

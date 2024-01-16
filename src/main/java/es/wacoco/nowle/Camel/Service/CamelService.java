@@ -1,6 +1,6 @@
-package es.wacoco.nowle.Service;
+package es.wacoco.nowle.Camel.Service;
 
-import es.wacoco.nowle.Controller.CamelController;
+import es.wacoco.nowle.Camel.Controller.CamelController;
 import org.apache.camel.CamelContext;
 import org.apache.camel.ProducerTemplate;
 import org.slf4j.Logger;

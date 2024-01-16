@@ -1,4 +1,4 @@
-package es.wacoco.nowle.Routes;
+package es.wacoco.nowle.Camel.Routes;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
