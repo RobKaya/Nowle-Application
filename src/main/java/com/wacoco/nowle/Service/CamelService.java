@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CamelService {
-    private static final Logger logger= LoggerFactory.getLogger(CamelController.class);
+   /* private static final Logger logger= LoggerFactory.getLogger(CamelController.class);
     private final CamelContext camelContext;
 
     public CamelService(CamelContext camelContext) {
@@ -20,5 +20,5 @@ public class CamelService {
     public String linkedinRoute(){
         return "";
     }
-
+    */
 }

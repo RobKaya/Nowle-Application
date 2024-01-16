@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class CamelController {
+    /*
     private final CamelService camelService;
 @Autowired
     public CamelController(CamelService camelService) {
@@ -20,5 +21,8 @@ public class CamelController {
     @GetMapping("/linkedin")
     public String getLinkedin(){
     return camelService.linkedinRoute();
-    }
+
+
+
+    }*/
 }

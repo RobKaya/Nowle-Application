@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/api/patentservice"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": [
+      {
+        "title": "Solar canopy system with roll-formed",
+        "description": "A solar canopy has a solar panel assembly including a first solar panel coupled to a second solar panel",
+        "applicant": "Rbi Solar Inc",
+        "inventors": "Christopher Thomas Needham"
+      },
+      {
+        "title": "Battery, Battery Module and Battery Pack",
+        "description": "A battery includes a housing, a first terminal, a second terminal and a fuse structure provided between the first terminal and the housing.",
+        "applicant": "Calb Co Ltd",
+        "inventors": ["Jane Smith", "John Doe"]
+      }
+    ],
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+
+}

@@ -1,0 +1,24 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/api/linkedin"
+  },
+    "response": {
+      "status": 200,
+      "jsonBody": [
+        {
+          "name": "Christopher Thomas Needham",
+          "email": "Christopher.t.needham@gmail.com",
+          "company": "Rbi Solar Inc"
+        },
+        {
+          "name": "Chang Lihui",
+          "email": "Chang.lihui@calbcompany.com",
+          "company": "Calb Co Ltd"
+        }
+      ],
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+}
