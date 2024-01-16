@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class CamelController {
-    /*
+
     private final CamelService camelService;
 @Autowired
     public CamelController(CamelService camelService) {
@@ -24,5 +24,5 @@ public class CamelController {
 
 
 
-    }*/
+    }
 }
