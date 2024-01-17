@@ -33,7 +33,7 @@ public class CamelService {
     public String linkedinRoute(){
         try {
             ProducerTemplate producerTemplate= camelContext.createProducerTemplate();
-            String response=producerTemplate.requestBody("direct:linkedin",null, String.class);
+            String response = producerTemplate.requestBody("direct:linkedin",null, String.class);
             return "Camel route process initiated! Response from linkedin server:\n"+response+"\n:Date"+getFormattedTimestamp();
         }catch (Exception e) {
             e.printStackTrace();

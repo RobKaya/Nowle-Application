@@ -10,9 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/dev")
 public class CamelController {
     private final CamelService camelService;
-@Autowired
+
+    @Autowired
     public CamelController(CamelService camelService) {
-        this.camelService = camelService;
+    this.camelService = camelService;
+
     }
 
     @GetMapping("/patentService")
