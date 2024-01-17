@@ -85,8 +85,14 @@
 		     <artifactId>spring-boot-docker-compose</artifactId>
 		</dependency>
 
+		<!--  https://mvnrepository.com/artifact/org.apache.camel/camel-test  -->
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-test</artifactId>
+			<version>3.22.0</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>

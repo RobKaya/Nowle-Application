@@ -25,7 +25,7 @@ public class CamelService {
     public String patentServiceRoute(){
         try{
             ProducerTemplate producerTemplate= camelContext.createProducerTemplate();
-            String response=producerTemplate.requestBody("direct:patent",null, String.class);
+            String response=producerTemplate.requestBody("direct:patentService",null, String.class);
           return "Camel route process initiated! Response from patent server:\n" + response +"\n Date" + getFormattedTimestamp();
         }catch (Exception e){
             e.printStackTrace();
@@ -57,7 +57,7 @@ public class CamelService {
 
             System.out.println(searchResults);
             // Invoke the patent service route
-            String patentResponse = camelContext.createProducerTemplate().requestBody("direct:patent", null, String.class);
+            String patentResponse = camelContext.createProducerTemplate().requestBody("direct:patentService", null, String.class);
             searchResults.put("patent", patentResponse);
 //            System.out.println("this is patent route \n" + patentResponse);
             // Invoke the LinkedIn service route
