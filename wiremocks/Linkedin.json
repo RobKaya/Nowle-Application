@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "GET",
-    "urlPathPattern": "/api/linkedin"
+    "url": "/linkedin"
   },
   "response": {
     "status": 200,
@@ -12,7 +12,7 @@
         "company": "Rbi Solar Inc"
       },
       {
-        "name": "Chang Lihui",
+        "name": "Jane Smith",
         "email": "Chang.lihui@calbcompany.com",
         "company": "Calb Co Ltd"
       }
