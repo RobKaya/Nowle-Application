@@ -5,6 +5,6 @@ services:
     image: wiremock/wiremock:2.32.0
     container_name: wiremock-api-container
     volumes:
-      - ./wiremock/:/home/wiremock/mappings
+      - ./wiremocks/:/home/wiremock/mappings
     ports:
       - "3000:8080"

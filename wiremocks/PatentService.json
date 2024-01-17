@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "GET",
-    "urlPathPattern": "/api/patentservice"
+    "url": "/patentservice"
   },
   "response": {
     "status": 200,

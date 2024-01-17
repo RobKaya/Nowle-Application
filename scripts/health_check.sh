@@ -13,3 +13,5 @@ if docker ps -f "name=springbootcamel" | grep -q "springbootcamel"; then
 else
     echo "Application is not running."
 fi
+
+
