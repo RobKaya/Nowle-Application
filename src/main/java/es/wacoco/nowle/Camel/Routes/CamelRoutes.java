@@ -70,7 +70,7 @@ public class CamelRoutes extends RouteBuilder {
                 .to("log:myLogger?level=INFO");
 
 // Route to retrieve patent data from a service
-        from("direct:patent").id("")
+        from("direct:patent").id("patent")
                 .to("http://localhost:3000/patentservice") // Send a request to the patent service
                 .process(new Processor() {
                     @Override
