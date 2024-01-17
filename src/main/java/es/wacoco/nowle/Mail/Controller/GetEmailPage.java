@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class GetEmailPage {
     @GetMapping("/send")
     public String gettingSendMailHtml(){
+
         return "mail";
     }
 }

@@ -38,8 +38,13 @@ public class CamelService {
     public String linkedinRoute(){
         try {
             ProducerTemplate producerTemplate= camelContext.createProducerTemplate();
+<<<<<<< HEAD
             String response=producerTemplate.requestBody("direct:linkedin",null, String.class);
             return "Camel route process initiated! Response from linkedin server:\n" + response + "\n Date"+getFormattedTimestamp();
+=======
+            String response = producerTemplate.requestBody("direct:linkedin",null, String.class);
+            return "Camel route process initiated! Response from linkedin server:\n"+response+"\n:Date"+getFormattedTimestamp();
+>>>>>>> branch2
         }catch (Exception e) {
             e.printStackTrace();
             return "Error occurred in getting the linkedin data ";
