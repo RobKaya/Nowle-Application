@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+</head>
+<body>
+<h1>Welcome to Nowle application</h1>
+<h2> Search the patentService in the list of patents</h2>
+<ul>
+    <li>
+
+    </li>
+</ul>
+<form id="SearchForm" onsubmit="searchPatent(event)">
+    <label for="Title to search"> Enter the patent title </label>
+    <input type="text" id="Title to search"  title="patent" required>
+    <button type="submit">Search patent</button>
+</form>
+<script>
+    function searchPatent(event) {
+            event.preventDefault();
+            var title = document.getElementById("Title to search").value;
+            // Send an AJAX request to your Spring Boot endpoint for user deletion
+            fetch('/patent/' + title, {
+                method: 'search'
+            })
+                .then(response => {
+                    if (response.ok) {
+
+                        location.reload();
+                    } else {
+                        // Handle the error accordingly
+                        console.error('Error in searching the patent');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error in searching patent:', error);
+                });
+        }
+
+</script>
+</body>
+</html>

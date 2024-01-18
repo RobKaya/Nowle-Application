@@ -72,7 +72,7 @@ public class CamelService {
             if (linkedinResponse.contains(searchTerm)) {
                 matchingResults.add("Match found in LinkedIn response:\n" + linkedinResponse);
             }
-            System.out.println("this is match resuult at the top: \n: " + matchingResults);
+            System.out.println("this is match result at the top: \n: " + matchingResults);
             // Return the search results
             return "Search results for term '" + searchTerm + "':\n" + String.join("\n", matchingResults) + "\n Date" + getFormattedTimestamp();
         } catch (Exception e) {

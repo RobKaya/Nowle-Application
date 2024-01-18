@@ -32,4 +32,8 @@ public class CamelController {
     public String getLinkedin(){
     return camelService.linkedinRoute();
     }
+    @GetMapping("/HomePage")
+    public String getHomePage(){
+        return "redirect:/HomePage";
+    }
 }
