@@ -35,8 +35,6 @@ public void TestMockEndpoints()throws Exception{
     template.sendBody("direct:patent",null);
     mock.assertIsSatisfied();
 }
-
-
 }
 
 
