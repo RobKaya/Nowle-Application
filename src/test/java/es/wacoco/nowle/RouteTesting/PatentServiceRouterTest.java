@@ -12,29 +12,31 @@ import org.junit.jupiter.api.Test;
 import static org.apache.camel.builder.AdviceWith.adviceWith;
 
 public class PatentServiceRouterTest extends CamelTestSupport {
-@Override
-    public boolean isUseAdviceWith(){
-    return true;
-}
-@Override
-    public RouteBuilder createRouteBuilder()throws Exception{
-    return new CamelRoutes();
-}
-@Test
-public void TestMockEndpoints()throws Exception{
-    RouteDefinition route= context.getRouteDefinition("patent");
-    adviceWith(route, context, new AdviceWithRouteBuilder() {
-        @Override
-        public void configure() throws Exception {
-            weaveAddLast().to("mock:log:myLogger?level=INFO");
-        }
-    });
-    context.start();
-    MockEndpoint mock=getMockEndpoint("mock:log:myLogger?level=INFO");
-    mock.expectedMessageCount(1);
-    template.sendBody("direct:patent",null);
-    mock.assertIsSatisfied();
-}
+    @Override
+    public boolean isUseAdviceWith() {
+        return true;
+    }
+
+    @Override
+    public RouteBuilder createRouteBuilder() throws Exception {
+        return new CamelRoutes();
+    }
+
+    @Test
+    public void TestMockEndpoints() throws Exception {
+        RouteDefinition route = context.getRouteDefinition("patent");
+        adviceWith(route, context, new AdviceWithRouteBuilder() {
+            @Override
+            public void configure() throws Exception {
+                weaveAddLast().to("mock:log:myLogger?level=INFO");
+            }
+        });
+        context.start();
+        MockEndpoint mock = getMockEndpoint("mock:log:myLogger?level=INFO");
+        mock.expectedMessageCount(1);
+        template.sendBody("direct:patent", null);
+        mock.assertIsSatisfied();
+    }
 }
 
 
