@@ -1,4 +1,4 @@
-package es.wacoco.nowle.controller;
+package es.wacoco.nowle.Camel.controller;
 
 import es.wacoco.nowle.Camel.Controller.CamelController;
 import es.wacoco.nowle.Camel.Service.CamelService;

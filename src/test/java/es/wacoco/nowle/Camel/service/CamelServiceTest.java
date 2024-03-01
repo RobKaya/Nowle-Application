@@ -1,4 +1,4 @@
-package es.wacoco.nowle.service;
+package es.wacoco.nowle.Camel.service;
 
 import es.wacoco.nowle.Camel.Service.CamelService;
 import org.apache.camel.CamelContext;

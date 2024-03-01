@@ -1,4 +1,4 @@
-package es.wacoco.nowle.Mail.Controller;
+package es.wacoco.nowle.Mail;
 
 import es.wacoco.nowle.Mail.Service.Imp.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
